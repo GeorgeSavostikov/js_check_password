@@ -8,7 +8,7 @@ describe(`Function 'checkPassword':`, () => {
   });
 
   it(`should return boolean value`, () => {
-    expect(typeof checkPassword('qwerty')).toBe('boolean');
+    expect(checkPassword('qwerty')).toBeFalsy();
   });
 
   it(`should return true for valid password with minimum length (8 chars)`, () => {
